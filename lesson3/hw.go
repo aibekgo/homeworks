@@ -6,8 +6,8 @@ func main() {
 	var s, e, sum1, sum2 int
 	fmt.Scanf("%d %d", &s, &e)
 	for i:=s; i<e; i++ {
-		if i%2!=0 {sum1 = sum1+i}
-		if i%2==0 {sum2 = sum2+i}
+		if i%2!=0 {sum1 = sum1+i
+		} else {sum2 = sum2+i}
 
 
 	}
