@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main() {
 	var a, b, c, max, min, avr int
 	var res, res1, res2 string
@@ -7,17 +9,33 @@ func main() {
 	res1 = " Минимальное число"
 	res2 = " Среднее значение"
 	fmt.Scanf("%d %d %d", &a, &b, &c)
-	if        a>=b && b>=c { max=a
-	} else if a<=b && b<=c { max=c
-	} else if a<=b && b>=c { max=b
-	} else if a<=b && b<=c { min=a
-	} else if a<=b && b<=c { min=c
-	} else if a>=b && b>=c { min=b
-	} else if a>=b && a<=c { avr=a
-	} else if a<=b && b<=c { avr=b
-	} else if a<=c && b>=c { avr=c
+	if a >= b && a >= c {
+		max = a
+	} else if b >= a && b >= c {
+		max = b
+	} else if c >= a && c >= b {
+		max = c
 	}
-	fmt.Printf("%s %d %s %d %s %d", res, max, res1, min, res2, avr )
+	if a <= b && a <= c {
+		min = a
+	} else if b <= a && b <= c {
+		min = b
+	} else if c <= a && c <= b {
+		min = c
+	}
+
+	if a != max && a != min {
+		avr = a
+	} else if b != max && b != min {
+		avr = b
+	} else if c != max && c != min {
+		avr = c
+	} else {
+		avr = a
+	}
+	fmt.Printf("%s -> %d \n", res, max)
+	fmt.Printf("%s -> %d \n", res1, min)
+	fmt.Printf("%s -> %d \n", res2, avr)
 }
 
 /*вводятся a,b,c

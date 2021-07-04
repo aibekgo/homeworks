@@ -2,25 +2,19 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	var a, n float64
-	var res, res1 string
-	res1 = " Целый остаток"
-	n = a/2
-	//m = a%2
-	s := math.Mod(a, 2)
-	//res = " Четное число"
-	//res2 = " Не четное число"
-	fmt.Scanf("%d", &a)
-	if s=0 {res = " Четное число"
-	} else { res = " Не четное число"
+	var a int
+	fmt.Scan(&a)
+	c := a % 2
+	fmt.Println(c)
+	if c == 0 {
+		fmt.Println("Четное число")
+	} else {
+		fmt.Println("Не четное число")
 	}
-   fmt.Printf("%s %d %s %d", res, a, res1, n)
 }
-
 
 
 /*как найти целый остаток от деления?(%)
