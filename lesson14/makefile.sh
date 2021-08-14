@@ -3,5 +3,5 @@ all: one
 
 one:
 	git add .
-	git commit -m "sdsd"
+	git commit -m "added new codes"
 	git push

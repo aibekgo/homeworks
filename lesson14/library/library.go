@@ -12,10 +12,9 @@ type Library struct {
 }
 
 
-func (l *Library) PrintLibraryInfo (header string) {
-	fmt.Println(fmt.Sprintf("\t---%s---", strings.ToUpper(header)))
-	fmt.Println("Name: ", l.Name, "Address: ", l.Address)
-		}
+func (l *Library) PrintLibraryInfo () {
+			fmt.Println("Name: ", l.Name, "Address: ", l.Address)
+	}
 
 func (l *Library) PrintBooksInformation(header string) {
 	fmt.Println(fmt.Sprintf("\t---%s---", strings.ToUpper(header)))

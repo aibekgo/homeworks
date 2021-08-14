@@ -51,6 +51,7 @@ func main() {
 	}
 	lib := library.Library{
 		Name:     "Melowoman",
+		Address:  "Gogol 55",
 		Books: []library.Book{book1, book2, book3, book4},
 	}
     lib.AddBook(book5)
@@ -59,5 +60,6 @@ func main() {
 	lib.PrintBooksInformation("after buying of product by id 3")
 	fmt.Println(lib.GetGenres())
 	lib.PrintBooksCountByGenres()
+	lib.PrintLibraryInfo()
 
 }
